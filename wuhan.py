@@ -45,7 +45,7 @@ result_table.columns = ['parameters', 'aic']
 print('最优模型: ', best_model.summary())
 # 预测
 df2 = df[['amount']]
-date_list = [datetime(2020, 1, 30), datetime(2020, 1, 31), datetime(2020, 2, 1), datetime(2020, 2, 2),]
+date_list = [datetime(2020, 1, 31), datetime(2020, 2, 1), datetime(2020, 2, 2),]
 future = pd.DataFrame(index=date_list, columns=df.columns)
 df2 = pd.concat([df2, future])
 df2['forecast'] = best_model.predict(start=0, end=14)
