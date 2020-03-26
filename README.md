@@ -1,1 +1,1 @@
-Wuhan_Predict based on ARMA
+COV_Predict based on ARMA
